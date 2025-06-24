@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coders.javarestrauntapp.LoggedInController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFECF1;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="91.0" layoutX="58.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/person-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="55.0" layoutY="209.0" text="Hi, Person" textFill="#540174">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="260.0" text="What do you" textFill="#540174">
+               <font>
+                  <Font name="Candara Light Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="282.0" text="want to eat today?" textFill="#540174">
+               <font>
+                  <Font name="Candara Light Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TextField fx:id="tf_search" layoutX="61.0" layoutY="28.0" prefHeight="36.0" prefWidth="278.0" promptText="Search here!" style="-fx-background-color: #FFECF1; -fx-cursor: hand;">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="312.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search_icon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="72.0" layoutY="86.0" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #540174; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pizza-slice.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="127.0" layoutY="86.0" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #540174; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/chicken.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="181.0" layoutY="86.0" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #540174; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/burger.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="236.0" layoutY="86.0" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #540174; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/spagheti.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="289.0" layoutY="86.0" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #540174; -fx-background-radius: 8;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/more.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="79.0" layoutY="138.0" text="Pizza">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="138.0" text="Chicken">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="138.0" text="Burger">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="138.0" text="Spagheti">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="296.0" layoutY="138.0" text="more">
+               <font>
+                  <Font name="Comic Sans MS" size="11.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="11.0" layoutY="172.0" prefHeight="228.0" prefWidth="382.0" style="-fx-border-radius: 8; -fx-background-color: #FFECF1; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="24.0" layoutY="14.0" text="Recommended for you" textFill="#540174">
+                     <font>
+                        <Font name="Candara Light Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ttf_more" layoutX="294.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToProducts" style="-fx-cursor: hand; -fx-background-color: #FFECF1;" text="More" textFill="#a62900" underline="true" />
+                  <AnchorPane layoutX="14.0" layoutY="44.0" prefHeight="157.0" prefWidth="137.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8;">
+                     <children>
+                        <Label layoutX="20.0" layoutY="119.0" text="Chicken Fillet">
+                           <font>
+                              <Font name="Comic Sans MS" size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="141.0" fitWidth="181.0" layoutX="-1.0" onMouseClicked="#goToChickenFillet" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../images/chicken_fillet.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="136.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/heart_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="130.0" prefHeight="25.0" prefWidth="62.0" text="Rs.899" textFill="#540174">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="111.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="142.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="131.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="152.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="121.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="185.0" layoutY="44.0" prefHeight="157.0" prefWidth="137.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8;">
+                     <children>
+                        <Label layoutX="20.0" layoutY="119.0" text="Chocolate Malt Cake">
+                           <font>
+                              <Font name="Comic Sans MS" size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="141.0" fitWidth="181.0" layoutX="-1.0" onMouseClicked="#goToChocolateMaltCake" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../images/chocolate_malt_cake.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="136.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/heart_filled.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="130.0" prefHeight="25.0" prefWidth="62.0" text="Rs.1,299" textFill="#540174">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="111.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="142.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="131.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="152.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="15.0" fitWidth="10.0" layoutX="121.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/star.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="18.0" fitWidth="40.0" layoutX="345.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/restraunt-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

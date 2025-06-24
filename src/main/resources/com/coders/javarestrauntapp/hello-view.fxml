@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coders.javarestrauntapp.HelloController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/restraunt-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="200.0" text="Great taste," textFill="#540174">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="224.0" text="Great sensation" textFill="#540174">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="302.0" text="restrauntApp@.com" textFill="#540174">
+               <font>
+                  <Font name="Candara Light Italic" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="405.0" style="-fx-background-color: #FFECF1;">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="60.0" layoutX="162.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="148.0" text="Username">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="210.0" text="Password">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="136.0" layoutY="140.0" promptText="Enter Your Name">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_password" layoutX="136.0" layoutY="204.0" promptText="Enter Password">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_login" layoutX="104.0" layoutY="269.0" mnemonicParsing="false" onAction="#goToLogIn" prefHeight="41.0" prefWidth="173.0" style="-fx-background-color: #540174; -fx-cursor: hand;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="108.0" layoutY="351.0" text="not a user?" textFill="#540174">
+               <font>
+                  <Font name="Candara Light Italic" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="200.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToSignUp" prefHeight="28.0" prefWidth="73.0" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Sign Up" textFill="#540174">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
